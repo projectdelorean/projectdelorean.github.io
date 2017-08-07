@@ -2,4 +2,16 @@ body {
   background-color: #FFF;
   font-family: 'Lato', sans-serif;
   color: #86bbd8;
+  height: 100%;
+}
+
+ html, .container-table {
+    height: 100%;
+}
+.container-table {
+    display: table;
+}
+.vertical-center-row {
+    display: table-cell;
+    vertical-align: middle;
 }
