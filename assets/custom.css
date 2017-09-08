@@ -27,12 +27,3 @@ body {
 #level5 {
             opacity: 1.0;
 }
-
-html, body, .container-table {
-  display-table;
-}
-
-.vertical-center-row {
-  display:table-cell;
-  vertical-align: middle;
-}
