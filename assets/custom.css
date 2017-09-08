@@ -8,22 +8,31 @@ body {
             opacity: 0.1;
 }
 
-#level1 { 
+#level1 {
             opacity: 0.2;
 }
 
-#level2 { 
+#level2 {
             opacity: 0.4;
 }
 
-#level3 { 
+#level3 {
             opacity: 0.6;
 }
 
-#level4 { 
+#level4 {
             opacity: 0.8;
 }
 
-#level5 { 
+#level5 {
             opacity: 1.0;
+}
+
+html, body, .container-table {
+  display-table;
+}
+
+.vertical-center-row {
+  display:table-cell;
+  vertical-align: middle;
 }
