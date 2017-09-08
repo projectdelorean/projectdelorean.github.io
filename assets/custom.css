@@ -4,6 +4,10 @@ body {
   color: #86bbd8;
 }
 
+html {
+    height: 100%
+}
+
 #level0 {
             opacity: 0.1;
 }
@@ -26,10 +30,4 @@ body {
 
 #level5 {
             opacity: 1.0;
-}
-
-.centered-container{
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
