@@ -9,7 +9,7 @@ html {
 }
 
 body {
-  background: -webkit-linear-gradient(bottom, rgba(134, 187, 216, 0.6), rgba(255, 255, 255, 0));
+  background: -webkit-linear-gradient(bottom, rgba(134, 187, 216, 1,0), rgba(255, 255, 255, 0));
   background: linear-gradient(0deg, rgba(134, 187, 216, 1), rgba(255, 255, 255, 0));
 }
 
