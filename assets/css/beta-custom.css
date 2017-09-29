@@ -2,13 +2,12 @@ body,
 html {
   padding: 0;
   margin: 0;
-  background: #120525;
+  background: #86bbd8;
   overflow: hidden;
 }
 
 #header-canvas {
   position: absolute;
-  background-color: white;
   top: 0;
   left: 0;
   width: 100%;
