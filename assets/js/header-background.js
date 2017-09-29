@@ -1,4 +1,4 @@
-var canvas = document.querySelector('#header canvas');
+var canvas = document.getElementById('header-canvas');
 var ctx = canvas.getContext('2d');
 
 // confioguration variables
