@@ -1,15 +1,72 @@
-body,
-html {
+body, html {
   padding: 0;
   margin: 0;
-  background-color:#fafafa;
+  background-color: #fafafa;
   overflow: hidden;
 }
 
-#header-canvas {
-  position: absolute;
+.sample {
+  min-height: 106vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.sample .text {
+  margin: 0 auto;
+  padding: 100px 20px;
+  position: relative;
+  text-align: left;
+  width: 820px;
+}
+
+#tufte {
+  background: #f8f5ef;
+}
+
+#tufte .text {
+  width: 860px;
+}
+
+#tufte h1 {
+  border-top: 5px solid #172bae;
+  color: #172bae;
+  font: 300 92px/1 'vollkorn';
+  letter-spacing: -1px;
+  margin: 0 0 0 -8px;
+}
+
+#tufte h1 span {
+  background: #f8f5ef;
+  padding: 0 19px 0 0;
+  position: relative;
+  top: -52px;
+}
+
+#tufte h1 span.kern {
+  background: transparent;
+  margin: 0 0 0 -5px;
+  padding: 0;
   top: 0;
-  left: 0;
-  width: 100%;
-  height: auto;
+}
+
+#tufte h1 span.kern.push {
+  margin: 0 0 0 7px;
+}
+
+#tufte p {
+  color: #172bae;
+  font: 400 20px/30px 'vollkorn';
+  font-style: italic;
+  margin: -40px 0 0 280px;
+  text-indent: -16px;
+}
+
+#tufte p span {
+  font-size: 28px;
+  font-family: 'gentium book basic';
+  font-weight: 400;
+  margin: 0 2px 0 0;
+  position: relative;
+  top: 5px;
 }
