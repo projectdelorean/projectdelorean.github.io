@@ -6,14 +6,6 @@ body, html {
   width: 100px;
 }
 
-#header-canvas {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: auto;
-}
-
 .delay-1 {
   animation-delay: .25s;
 }
@@ -62,7 +54,7 @@ body, html {
   background: #fafafa;
 }
 
-#camus .text {
+#title-plus-call-to-action .text {
   width: 205px;
 }
 
@@ -82,7 +74,7 @@ body, html {
   width: 60px;
 }
 
-#camus hr.bottom {
+#title-plus-call-to-action hr.bottom {
   margin: 10px auto;
 }
 
