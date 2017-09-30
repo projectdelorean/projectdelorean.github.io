@@ -6,6 +6,10 @@ body, html {
   width: 100px;
 }
 
+.icon_class {
+  width: 100px;
+}
+
 .delay-1 {
   animation-delay: .25s;
 }
@@ -32,6 +36,18 @@ body, html {
 
 .delay-7 {
   animation-delay: 1.75s;
+}
+
+.delay-8 {
+  animation-delay: 2s;
+}
+
+.delay-9 {
+  animation-delay: 2.25s;
+}
+
+.delay-10 {
+  animation-delay: 2.5s;
 }
 
 #wilder {
