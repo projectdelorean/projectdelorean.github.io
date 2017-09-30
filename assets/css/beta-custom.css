@@ -4,6 +4,10 @@ html {
   overflow: hidden;
 }
 
+#logo {
+  width: 100px;
+}
+
 #header-canvas {
   position: absolute;
   top: 0;
