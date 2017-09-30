@@ -10,6 +10,10 @@ body, html {
   width: 100px;
 }
 
+.gif_class {
+  width: 100px;
+}
+
 .delay-1 {
   animation-delay: .25s;
 }
