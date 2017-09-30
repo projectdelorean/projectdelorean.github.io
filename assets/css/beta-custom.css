@@ -57,3 +57,45 @@ body, html {
   text-transform: uppercase;
   text-indent: -13px;
 }
+
+#title-plus-call-to-action {
+  background: #fafafa;
+}
+
+#camus .text {
+  width: 205px;
+}
+
+#title-plus-call-to-action h1 {
+  color: #86bbd8;
+  font: 700 24px/24px 'pt sans narrow';
+  margin: 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#title-plus-call-to-action hr {
+  background: #333;
+  border: 0;
+  height: 2px;
+  margin: 12px auto 8px;
+  width: 60px;
+}
+
+#camus hr.bottom {
+  margin: 10px auto;
+}
+
+#title-plus-call-to-action h2 {
+  color: #222;
+  font: 700 16px/20px 'pt sans';
+  margin: 0;
+  text-align: center;
+}
+
+#title-plus-call-to-action p {
+  color: #222;
+  font: 400 14px/18px 'pt serif';
+  text-align: justify;
+  text-indent: 14px;
+}
