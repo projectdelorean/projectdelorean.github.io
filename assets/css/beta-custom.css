@@ -91,3 +91,9 @@ body, html {
   text-align: justify;
   text-indent: 14px;
 }
+
+#description {
+  color: #222;
+  font: 'open sans';
+  text-align: center;
+}
