@@ -26,6 +26,10 @@ body, html {
   animation-delay: 1.25s;
 }
 
+.delay-6 {
+  animation-delay: 1.5s;
+}
+
 #wilder {
   background: #fafafa;
 }
