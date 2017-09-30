@@ -1,6 +1,5 @@
-body,
-html {
-  background-color:#fafafa;
+body, html {
+  background-color: #fafafa;
 }
 
 #logo {
@@ -16,14 +15,45 @@ html {
 }
 
 .delay-1 {
-animation-delay: .25s;
+  animation-delay: .25s;
 }
+
 .delay-2 {
-animation-delay: .5s;
+  animation-delay: .5s;
 }
+
 .delay-3 {
-animation-delay: .75s;
+  animation-delay: .75s;
 }
+
 .delay-4 {
-animation-delay: 1s;
+  animation-delay: 1s;
+}
+
+.delay-5 {
+  animation-delay: 1.25s;
+}
+
+#wilder {
+  background: #fafafa;
+}
+
+#wilder .text {
+  width: 410px;
+}
+
+#wilder h1 {
+  color: #333;
+  font: 400 20px/30px 'vollkorn';
+  font-style: italic;
+  margin: 0 0 10px 0;
+  text-indent: -6px;
+}
+
+#wilder p {
+  color: #86bbd8;
+  font: 400 12px/18px 'vollkorn';
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-indent: -13px;
 }
