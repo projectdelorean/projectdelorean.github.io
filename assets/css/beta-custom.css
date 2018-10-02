@@ -18,7 +18,7 @@ body, html {
 }
 
 .navbar{
-    background-color: transparent;
+    background-color: black;
     color: white;
     font-family: BergenMono;
 }
@@ -41,18 +41,18 @@ body, html {
 
 .cta h5{
     font-family: BergenText;
-    color: rgba(255,255,255,0.9)     
+    color: rgba(255,255,255,0.9)
 
 }
 
 .cta h6{
     font-family: BergenText;
-    color: rgba(255,255,255,0.8)     
+    color: rgba(255,255,255,0.8)
 }
 
 .bottom {
     min-height: 5%;
     height: 5%;
     font-family: BergenMono;
-    color: rgba(255,255,255,0.5)     
+    color: rgba(255,255,255,0.5)
 }
