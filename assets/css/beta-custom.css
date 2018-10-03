@@ -55,9 +55,9 @@ body, html {
     color: rgba(255,255,255,0.5)
 }
 
-.bottom a {
-    font-size: 30px;
-    font-size: 3.5vw;
+.bottom-text {
+  font-size: 30px;
+  font-size: 3vw;
 }
 
 .delay-1 {
