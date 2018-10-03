@@ -34,7 +34,6 @@ body, html {
 }
 
 .cta{
-    min-height: 95%;
     height: 95%;
     font-family: BergenSans;
 }
@@ -51,7 +50,6 @@ body, html {
 }
 
 .bottom {
-    min-height: 5%;
     height: 5%;
     font-family: BergenMono;
     color: rgba(255,255,255,0.5)
