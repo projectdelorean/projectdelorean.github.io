@@ -43,7 +43,7 @@
             </ul>
             <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
                 <li class="nav-item">
-                    <a class="nav-link" href="mailto:contact@hindsightglasses.com">contact</a>
+                    <a class="nav-link" href="#" data-toggle="modal" data-target="#contactModal">contact</a>
                 </li>
             </ul>
         </div>
@@ -65,6 +65,41 @@
             </div>
         </div>
     </div>
+
+    <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="contactModalTitle">We'd love to hear from you</h5>
+                </div>
+                <div class="modal-body">
+                    <form action="https://formcarry.com/s/rkhZ4gQqf" method="POST" accept-charset="UTF-8">
+                        <div class="form-group">
+                            <label for="subject-name" class="col-form-label">Subject:</label>
+                            <input type="text" class="form-control" id="subject-name" name="subject" required>
+                            <input type="hidden" name="_gotcha" style="display:none" />
+                            <small id="subjectHelp" class="form-text text-muted">A brief summary of why you're reaching out.</small>
+
+                        </div>
+                        <div class="form-group">
+                            <label for="emailAddress-name" class="col-form-label">Email Address:</label>
+                            <input class="form-control" id="emailAddress-name" name="email" required>
+                            <small id="emailHelp" class="form-text text-muted">An email address so we can follow up with you.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="message-area" class="col-form-label">Message:</label>
+                            <textarea class="form-control" id="message-area" rows="4" name="message" required></textarea>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" id="modal-button-font" class="btn btn-secondary round" data-dismiss="modal">Close</button>
+                            <button type="submit" id="modal-button-font" class="btn btn-primary round">Send message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
 
     <!-- Optional JavaScript -->

@@ -63,6 +63,28 @@ html {
     font-size: 1vw;
 }
 
+.modal-content {
+    background-color: black;
+}
+
+.modal-title {
+    font-family: BergenSans;
+    color: white;
+}
+
+.col-form-label {
+    font-family: BergenSans;
+    color: white;
+}
+
+.text-muted {
+    font-family: BergenText;
+}
+
+#modal-button-font {
+    font-family: BergenSans
+}
+
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
 
@@ -279,6 +301,12 @@ iPad 3
     -webkit-animation-delay: 2.5s;
 }
 
+/* Round Buttons */
+
+.round {
+    border-radius: 24px;
+}
+
 /* Keyframes */
 
 @keyframes fadeInUpTransition {
@@ -313,10 +341,10 @@ iPad 3
     animation-fill-mode: both;
 }
 
-.m-scene .scene-element--fadeinup{
+.m-scene .scene-element--fadeinup {
     animation-name: fadeInUpTransition;
 }
 
-.m-scene .scene-element--fadeinright{
+.m-scene .scene-element--fadeinright {
     animation-name: fadeInRightTransition;
 }
