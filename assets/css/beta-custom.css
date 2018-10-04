@@ -338,7 +338,7 @@ iPad 3
 .m-scene .scene-element {
     animation-duration: 0.25s;
     transition-timing-function: ease-in;
-    animation-fill-mode: both;
+    animation-fill-mode: none;
 }
 
 .m-scene .scene-element--fadeinup {
