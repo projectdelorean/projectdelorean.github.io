@@ -34,7 +34,7 @@ html {
     color: white
 }
 
-#bg{
+#bg {
     animation-duration: 2s;
 }
 
@@ -277,4 +277,46 @@ iPad 3
 
 .delay-10 {
     -webkit-animation-delay: 2.5s;
+}
+
+/* Keyframes */
+
+@keyframes fadeInUpTransition {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, 100%, 0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+@keyframes fadeInRightTransition {
+    0% {
+        opacity: 0;
+        transform: translate3d(100%, 0, 0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+/* For the Page Animations */
+
+.m-scene .scene-element {
+    animation-duration: 0.25s;
+    transition-timing-function: ease-in;
+    animation-fill-mode: both;
+}
+
+.m-scene .scene-element--fadeinup{
+    animation-name: fadeInUpTransition;
+}
+
+.m-scene .scene-element--fadeinright{
+    animation-name: fadeInRightTransition;
 }
