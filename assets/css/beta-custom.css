@@ -107,6 +107,9 @@ html {
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
     /* Styles */
+    .bottom-text{
+        font-size: 1.5vw;
+    }
 
 }
 
@@ -121,15 +124,15 @@ html {
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
 
     /* Styles */
-    .bottom-text {
-        font-size: 1.75vw;
-    }
 }
 
 /* ----------- iPad Pro ----------- */
 /* Portrait and Landscape */
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
     /* Styles */
+    .bottom-text{
+        font-size: 1.5vw;
+    }
 
 }
 
@@ -198,7 +201,7 @@ iPad 3
 
     /* Styles */
     .desc-text {
-        font-size: 5vw;
+        font-size: 4.8vw;
     }
 }
 
@@ -209,6 +212,10 @@ iPad 3
 
 @media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2) {
     /* Styles */
+    /* Styles */
+    .desc-text {
+        font-size: 4.8vw;
+    }
 }
 
 /* iPhone X ----------- */
@@ -220,7 +227,7 @@ iPad 3
 
     /* Styles */
     .desc-text {
-        font-size: 5vw;
+        font-size: 4.8vw;
     }
 }
 
@@ -305,46 +312,4 @@ iPad 3
 
 .round {
     border-radius: 24px;
-}
-
-/* Keyframes */
-
-@keyframes fadeInUpTransition {
-    0% {
-        opacity: 0;
-        transform: translate3d(0, 100%, 0);
-    }
-
-    100% {
-        opacity: 1;
-        transform: none;
-    }
-}
-
-@keyframes fadeInRightTransition {
-    0% {
-        opacity: 0;
-        transform: translate3d(100%, 0, 0);
-    }
-
-    100% {
-        opacity: 1;
-        transform: none;
-    }
-}
-
-/* For the Page Animations */
-
-.m-scene .scene-element {
-    animation-duration: 0.25s;
-    transition-timing-function: ease-in;
-    animation-fill-mode: none;
-}
-
-.m-scene .scene-element--fadeinup {
-    animation-name: fadeInUpTransition;
-}
-
-.m-scene .scene-element--fadeinright {
-    animation-name: fadeInRightTransition;
 }
