@@ -29,7 +29,7 @@
         <div class="barba-container">
 
             <nav id="the-nav-bar" class="navbar navbar-dark navbar-expand-md justify-content-center fixed-top">
-                <a id="home-link" href="/beta-landingpage.html" class="navbar-brand d-flex w-50 mr-auto">
+                <a href="/beta-landingpage.html" class="navbar-brand d-flex w-50 mr-auto">
                     <img src="assets/brand/lens_logo.svg" width="30" height="30" style="margin-right: 10px">
                     Hindsight
                 </a>
@@ -53,30 +53,30 @@
                 </div>
             </nav>
 
-            <div id="bg" class="main-page container-fluid animated fadeIn" data-transition="fadeIn">
+            <div id="bg" class=" main-page container-fluid animated fadeIn" data-transition="fadeIn">
 
-                <div class="row align-items-center cta">
+                <div class="row align-items-center main-page-cta">
                     <div class="col" align="center">
-                        <h1 class="title-text animated fadeInUp delay-3">live in the moment, capture the past</h1>
-                        <h5 class="desc-text animated fadeIn delay-4">Hindsight produces a next generation pair of glasses which allow you to capture moments before and after they happen.</h5>
+                        <h1 class="title-text animated fadeInUp delay-3">Live in the moment, capture the past</h1>
+                        <h5 class="desc-text animated fadeIn delay-4">Hindsight is a next generation pair of glasses which allow you to capture moments before and after they happen.</h5>
                         <h6 class="animated fadeIn delay-5">Never forget something again.</h6>
-
+                        <a href="/glasses.html" class="btn btn-light round button-font animated fadeIn delay-6" role="button">learn more</a>
+                        <a href="#" class="btn btn-dark round button-font animated fadeIn delay-6" role="button" data-toggle="modal" data-target="#joinModal">join the list</a>
                     </div>
                 </div>
 
-                <div class="row align-items-center bottom animated fadeIn delay-6">
+                <div class="row align-items-center main-page-footer animated fadeIn delay-6">
                     <div class="col" align="center">
                         <a class="bottom-text">Hindsight Technologies, LLC. The year is 2018.</a>
                     </div>
                 </div>
 
             </div>
-
         </div>
 
     </div>
 
-    <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="Contact Us" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header">
@@ -101,8 +101,31 @@
                             <textarea class="form-control" id="message-area" rows="4" name="message" required></textarea>
                         </div>
                         <div class="modal-footer">
-                            <button type="button" id="modal-button-font" class="btn btn-secondary round" data-dismiss="modal">Close</button>
-                            <button type="submit" id="modal-button-font" class="btn btn-primary round">Send message</button>
+                            <button type="button" class="btn btn-outline-secondary round button-font" data-dismiss="modal">Close</button>
+                            <button type="submit" class="btn btn-outline-primary round button-font">Send message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="joinModal" tabindex="-1" role="dialog" aria-labelledby="Join Modal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="contactModalTitle">Be the first to recieve updates</h5>
+                </div>
+                <div class="modal-body">
+                    <form action="https://formcarry.com/s/rkhZ4gQqf" method="POST" accept-charset="UTF-8">
+                        <div class="form-group">
+                            <label for="emailAddress-name" class="col-form-label">Email Address:</label>
+                            <input class="form-control" id="emailAddress-name" name="email" required>
+                            <small id="emailHelp" class="form-text text-muted">An email address so we can send you updates.</small>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-outline-secondary round button-font" data-dismiss="modal">Close</button>
+                            <button type="submit" class="btn btn-outline-primary round button-font">Submit</button>
                         </div>
                     </form>
                 </div>

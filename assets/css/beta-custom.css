@@ -18,10 +18,21 @@ html {
     background-color: black;
 }
 
+#bg {
+    animation-duration: 2s;
+}
+
 .navbar {
-    background-color: black;
+    background-color: transparent;
+    border: none;
     color: white;
+    transition: background-color 0.5s ease 0s;
     font-family: BergenMono;
+}
+
+.navbar.solid{
+    background-color: black;
+    transition: background-color 0.5s ease 0s;
 }
 
 .main-page {
@@ -34,14 +45,70 @@ html {
     color: white
 }
 
-.glasses-page {
+.main-page-cta {
+    height: 95%;
+}
+
+.main-page-cta h1{
+    font-family: BergenSans;
+}
+
+.main-page-cta h5 {
+    font-family: BergenText;
+    color: rgba(255, 255, 255, 0.9)
+}
+
+.main-page-cta h6 {
+    font-family: BergenText;
+    color: rgba(255, 255, 255, 0.8)
+}
+
+.main-page-footer {
+    height: 5%;
+    font-family: BergenMono;
+    color: rgba(255, 255, 255, 0.5)
+}
+
+.glasses-page-hero {
     height: 100vh;
     width: 100vw;
-    background-image: url(/assets/svg/glasses.svg);
+    background-image: url("/assets/img/glasses-hero.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    color: white
+    color: black;
+}
+
+.glasses-page-hero-cta {
+    height: 90%;
+}
+
+.glasses-page-hero-cta  h1{
+    font-family: BergenSans;
+}
+
+.glasses-page-hero-cta  h2 {
+    font-family: BergenText;
+    color: rgba(0, 0, 0, 0.9)
+}
+
+.glasses-page-hero-cta  h6 {
+    font-family: BergenText;
+    color: rgba(0, 0, 0, 0.8)
+}
+
+.glasses-page-hero-bottom{
+    height: 10%;    
+}
+
+.down-arrow-bounce{
+    animation-duration: 2s;
+    animation-delay: 4s;
+    animation-iteration-count: infinite;
+}
+
+#down-arrow:hover{
+    fill: white;
 }
 
 .team-page {
@@ -51,32 +118,7 @@ html {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    color: white
-}
-
-#bg {
-    animation-duration: 2s;
-}
-
-.cta {
-    height: 95%;
-    font-family: BergenSans;
-}
-
-.cta h5 {
-    font-family: BergenText;
-    color: rgba(255, 255, 255, 0.9)
-}
-
-.cta h6 {
-    font-family: BergenText;
-    color: rgba(255, 255, 255, 0.8)
-}
-
-.bottom {
-    height: 5%;
-    font-family: BergenMono;
-    color: rgba(255, 255, 255, 0.5)
+    color: white;
 }
 
 .bottom-text {
@@ -101,7 +143,7 @@ html {
     font-family: BergenText;
 }
 
-#modal-button-font {
+.button-font {
     font-family: BergenSans
 }
 

@@ -15,22 +15,6 @@ var animationEnd = (function (el) {
 
 $('document').ready(function () {
 
-    var styleTag = document.getElementById("the-style");
-    var sheet = styleTag.sheet ? styleTag.sheet : styleTag.styleSheet;
-
-    if (sheet.cssRules) { // all browsers, except IE before version 9
-        sheet.deleteRule(0);
-    } else { // Internet Explorer before version 9
-        sheet.removeRule(0);
-    }
-
-    $('#the-nav-bar').addClass("animated fadeInDown delay-2");
-    $("#the-nav-bar").css("visibility", "visible");
-    $("#the-nav-bar").one(animationEnd, function () {
-        $("#the-nav-bar").removeClass("animated fadeInDown delay-2");
-        console.log("AYE CLASSES REMOVED");
-    });
-
     Barba.Pjax.start();
     Barba.Prefetch.init();
 
@@ -45,4 +29,14 @@ $('document').ready(function () {
     $('#team-link').on('click', function (event) {
         console.log("AYE TEAM");
     });
+    
+    // Transition effect for navbar 
+        $(window).scroll(function() {
+          // checks if window is scrolled more than 500px, adds/removes solid class
+          if($(this).scrollTop() > 150) { 
+              $('.navbar').addClass('solid');
+          } else {
+              $('.navbar').removeClass('solid');
+          }
+        });
 });
