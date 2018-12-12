@@ -72,11 +72,11 @@ html {
 .glasses-page-hero {
     height: 100vh;
     width: 100vw;
-    background-image: url("/assets/img/glasses-hero.jpg");
+    background-image: url("/assets/img/glasses-hero.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    color: black;
+    color: white;
 }
 
 .glasses-page-hero-cta {
@@ -89,12 +89,12 @@ html {
 
 .glasses-page-hero-cta  h2 {
     font-family: BergenText;
-    color: rgba(0, 0, 0, 0.9)
+    color: rgba(255, 255, 255, 0.9)
 }
 
 .glasses-page-hero-cta  h6 {
     font-family: BergenText;
-    color: rgba(0, 0, 0, 0.8)
+    color: rgba(255, 255, 255, 0.8)
 }
 
 .glasses-page-hero-bottom{
@@ -109,6 +109,16 @@ html {
 
 #down-arrow:hover{
     fill: white;
+}
+
+.glasses-page-battery-section {
+    height: 100vh;
+    width: 100vw;
+    background-image: url("/assets/img/glasses-battery.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    color: white;
 }
 
 .team-page {
