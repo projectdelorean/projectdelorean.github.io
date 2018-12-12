@@ -17,8 +17,8 @@
 
     <!-- Bootstrap CSS-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <!--AOS CSS -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Animate.CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <!-- Custom CSS -->
     <link type="text/css" rel="stylesheet" href="assets/css/beta-custom.css?version=4" />
 </head>
@@ -54,19 +54,19 @@
                 </div>
             </nav>
 
-            <div id="bg" class=" main-page container-fluid" data-transition="fadeIn" data-aos="fade">
+            <div id="bg" class=" main-page container-fluid animated fadeIn" data-transition="fadeIn">
 
                 <div class="row align-items-center main-page-cta">
                     <div class="col" align="center">
-                        <h1 class="title-text" data-aos="fade-up" data-aos-delay="750">Live in the moment, capture the past</h1>
-                        <h5 class="desc-text" data-aos="fade" data-aos-delay="1000">Hindsight is a next generation pair of glasses which allow you to capture moments before and after they happen.</h5>
-                        <h6 class="" data-aos="fade" data-aos-delay="1250">Never forget something again.</h6>
-                        <a href="/glasses.html" class="btn btn-light round button-font" data-aos="fade" data-aos-delay="1500" role="button">learn more</a>
-                        <a href="#" class="btn btn-dark round button-font" data-aos="fade" data-aos-delay="1500" role="button" data-toggle="modal" data-target="#joinModal">join the list</a>
+                        <h1 class="title-text wow fadeInUp delay-3">Live in the moment, capture the past</h1>
+                        <h5 class="desc-text wow fadeIn delay-4">Hindsight is a next generation pair of glasses which allow you to capture moments before and after they happen.</h5>
+                        <h6 class="wow fadeIn delay-5">Never forget something again.</h6>
+                        <a href="/glasses.html" class="btn btn-light round button-font wow fadeIn delay-6" role="button">learn more</a>
+                        <a href="#" class="btn btn-dark round button-font wow fadeIn delay-6" role="button" data-toggle="modal" data-target="#joinModal">join the list</a>
                     </div>
                 </div>
 
-                <div class="row align-items-center main-page-footer" data-aos="fade" data-aos-delay="1500">
+                <div class="row align-items-center main-page-footer wow fadeIn delay-6">
                     <div class="col" align="center">
                         <a class="bottom-text">Hindsight Technologies, LLC. The year is 2018.</a>
                     </div>
@@ -140,15 +140,14 @@
     <script src="assets/js/prefixfree.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/barba.js/1.0.0/barba.min.js"></script>
     <script src="assets/js/barba.transitions.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/js/wow.min.js"></script>
     <script src="assets/js/functions.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
     <script>
-        AOS.init({
-            duration:750,
-        });
+        new WOW().init();
+
     </script>
 </body>
 
