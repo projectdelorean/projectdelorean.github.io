@@ -19,77 +19,71 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!-- Animate.CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <!-- AOS CSS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Custom CSS -->
     <link type="text/css" rel="stylesheet" href="assets/css/beta-custom.css?version=4" />
 </head>
 
 <body>
 
-    <div id="barba-wrapper">
-
-        <div class="barba-container">
-
-            <nav id="#the-nav-bar" class="navbar navbar-dark navbar-expand-md justify-content-center fixed-top">
-                <a href="/beta-landingpage.html" class="navbar-brand d-flex w-50 mr-auto">
-                    <img src="assets/brand/lens_logo.svg" width="30" height="30" style="margin-right: 10px">
-                    Hindsight
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar3">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse w-100" id="collapsingNavbar3">
-                    <ul class="navbar-nav mx-auto w-100 justify-content-center">
-                        <li class="nav-item">
-                            <a class="nav-link active disabled" href="/glasses.html">glasses</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/team.html">team</a>
-                        </li>
-                    </ul>
-                    <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#" data-toggle="modal" data-target="#contactModal">contact</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-
-            <div id="bg" class="glasses-page-hero container-fluid wow fadeIn" data-transition="fadeIn">
-
-                <div class="row align-items-center glasses-page-hero-cta">
-                    <div class="col" align="center">
-                        <h1 class="title-text wow fadeInUp delay-3">Hindsight</h1>
-                        <h2 class="desc-text wow fadeIn delay-4">20/20's</h2>
-                        <h6 class="wow fadeIn delay-5">Never forget something again.</h6>
-
-                    </div>
-                </div>
-
-                <div class="row align-items-center glasses-page-hero-bottom wow fadeIn delay-6">
-                    <div class="col" align="center">
-                        <a href="#">
-                            <img src="/assets/svg/down.svg" width="25" height="25" id="down-arrow" class="animated bounce down-arrow-bounce">
-                        </a>
-                    </div>
-                </div>
-
-            </div>
-            
-            <div id="bg" class="glasses-page-battery-section container-fluid wow fadeIn" data-wow-offset="100">
-                
-                <div class="row align-items-center glasses-page-hero-cta">
-                    <div class="col" align="center">
-                        <h1 class="title-text wow fadeInUp">Hindsight</h1>
-                        <h2 class="desc-text wow fadeIn">20/20's</h2>
-                        <h6 class="wow fadeIn">Never forget something again.</h6>
-
-                    </div>
-                </div>
-
-            
-            </div>
-
+    <nav id="#the-nav-bar" class="navbar navbar-dark navbar-expand-md justify-content-center fixed-top">
+        <a href="/beta-landingpage.html" class="navbar-brand d-flex w-50 mr-auto">
+            <img src="assets/brand/lens_logo.svg" width="30" height="30" style="margin-right: 10px">
+            Hindsight
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar3">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse w-100" id="collapsingNavbar3">
+            <ul class="navbar-nav mx-auto w-100 justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link active disabled" href="/glasses.html">glasses</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/team.html">team</a>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
+                <li class="nav-item">
+                    <a class="nav-link" href="#" data-toggle="modal" data-target="#contactModal">contact</a>
+                </li>
+            </ul>
         </div>
+    </nav>
+
+    <div id="bg" class="glasses-page-hero container-fluid wow fadeIn" data-transition="fadeIn">
+
+        <div class="row align-items-center glasses-page-hero-cta">
+            <div class="col" align="center">
+                <h1 class="title-text wow fadeInUp delay-3">Hindsight</h1>
+                <h2 class="desc-text wow fadeIn delay-4">20/20's</h2>
+                <h6 class="wow fadeIn delay-5">Never forget something again.</h6>
+
+            </div>
+        </div>
+
+        <div class="row align-items-center glasses-page-hero-bottom wow fadeIn delay-6">
+            <div class="col" align="center">
+                <a href="#">
+                    <img src="/assets/svg/down.svg" width="25" height="25" id="down-arrow" class="animated bounce down-arrow-bounce">
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="bg" class="glasses-page-battery-section container-fluid wow fadeIn" data-wow-offset="100">
+
+        <div class="row align-items-center glasses-page-hero-cta">
+            <div class="col" align="center">
+                <h1 class="title-text wow fadeInUp">Hindsight</h1>
+                <h2 class="desc-text wow fadeIn">20/20's</h2>
+                <h6 class="wow fadeIn">Never forget something again.</h6>
+
+            </div>
+        </div>
+
 
     </div>
 
@@ -133,14 +127,13 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="assets/js/prefixfree.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/barba.js/1.0.0/barba.min.js"></script>
-    <script src="assets/js/barba.transitions.min.js"></script>
-    <script src="assets/js/wow.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="assets/js/functions.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
     <script>
-        new WOW().init();
+        AOS.init();
 
     </script>
 </body>

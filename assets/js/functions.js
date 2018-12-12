@@ -15,9 +15,6 @@ var animationEnd = (function (el) {
 
 $('document').ready(function () {
 
-    Barba.Pjax.start();
-    Barba.Prefetch.init();
-
     $('#home-link').on('click', function (event) {
         console.log("AYE HOME");
     });
@@ -29,14 +26,14 @@ $('document').ready(function () {
     $('#team-link').on('click', function (event) {
         console.log("AYE TEAM");
     });
-    
+
     // Transition effect for navbar 
-        $(window).scroll(function() {
-          // checks if window is scrolled more than 500px, adds/removes solid class
-          if($(this).scrollTop() > 150) { 
-              $('.navbar').addClass('solid');
-          } else {
-              $('.navbar').removeClass('solid');
-          }
-        });
+    $(window).scroll(function () {
+        // checks if window is scrolled more than 500px, adds/removes solid class
+        if ($(this).scrollTop() > 150) {
+            $('.navbar').addClass('solid');
+        } else {
+            $('.navbar').removeClass('solid');
+        }
+    });
 });
