@@ -19,15 +19,15 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!-- Animate.CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-    <!-- AOS CSS-->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Custom CSS -->
     <link type="text/css" rel="stylesheet" href="assets/css/beta-custom.css?version=4" />
+    <!--  ScrollReveal -->
+    <script src="https://unpkg.com/scrollreveal@4"></script>
 </head>
 
 <body>
 
-    <nav id="#the-nav-bar" class="navbar navbar-dark navbar-expand-md justify-content-center fixed-top">
+    <nav id="the-nav-bar" class="navbar navbar-dark navbar-expand-md justify-content-center fixed-top load-hidden">
         <a href="/beta-landingpage.html" class="navbar-brand d-flex w-50 mr-auto">
             <img src="assets/brand/lens_logo.svg" width="30" height="30" style="margin-right: 10px">
             Hindsight
@@ -38,10 +38,10 @@
         <div class="navbar-collapse collapse w-100" id="collapsingNavbar3">
             <ul class="navbar-nav mx-auto w-100 justify-content-center">
                 <li class="nav-item">
-                    <a class="nav-link active disabled" href="/glasses.html">glasses</a>
+                    <a id="glasses-link" class="nav-link" href="/glasses.html">glasses</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/team.html">team</a>
+                    <a id="team-link" class="nav-link" href="/team.html">team</a>
                 </li>
             </ul>
             <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
@@ -52,20 +52,25 @@
         </div>
     </nav>
 
-    <div id="bg" class="glasses-page-hero container-fluid wow fadeIn" data-transition="fadeIn">
+    <div id="bg" class="glasses-page-hero container-fluid load-hidden">
 
         <div class="row align-items-center glasses-page-hero-cta">
-            <div class="col" align="center">
-                <h1 class="title-text wow fadeInUp delay-3">Hindsight</h1>
-                <h2 class="desc-text wow fadeIn delay-4">20/20's</h2>
-                <h6 class="wow fadeIn delay-5">Never forget something again.</h6>
-
+            <div class="col-12" align="center">
+                <h1 class="glasses-page-title-text load-hidden">Hindsight</h1>
+                <h2 class="glasses-page-desc-text load-hidden">20/20's</h2>
+                <h6 class="glasses-page-tagline-text load-hidden">Never forget something again.</h6>
             </div>
         </div>
 
-        <div class="row align-items-center glasses-page-hero-bottom wow fadeIn delay-6">
+        <div class="row align-items-center glasses-page-hero-button-section load-hidden">
+            <div class="col-12" align="center">
+                <a href="#" class="main-page-btn btn btn-outline-primary round button-font load-hidden" role="button" data-toggle="modal" data-target="#joinModal">join the list</a>
+            </div>
+        </div>
+
+        <div class="row align-items-center glasses-page-hero-bottom load-hidden">
             <div class="col" align="center">
-                <a href="#">
+                <a id="scroll-to-design" href="#">
                     <img src="/assets/svg/down.svg" width="25" height="25" id="down-arrow" class="animated bounce down-arrow-bounce">
                 </a>
             </div>
@@ -73,18 +78,89 @@
 
     </div>
 
-    <div id="bg" class="glasses-page-battery-section container-fluid wow fadeIn" data-wow-offset="100">
-
-        <div class="row align-items-center glasses-page-hero-cta">
-            <div class="col" align="center">
-                <h1 class="title-text wow fadeInUp">Hindsight</h1>
-                <h2 class="desc-text wow fadeIn">20/20's</h2>
-                <h6 class="wow fadeIn">Never forget something again.</h6>
-
+    <div id="bg" class="glasses-page-design-section container-fluid load-hidden">
+        <div class="container glasses-page-design-title-section">
+            <div class="row align-items-center justify-content-start h-100">
+                <div class="col-12 col-md-8 load-hidden">
+                    <h3 class="glasses-page-design-title load-hidden">Design</h3>
+                    <h5 class="glasses-page-design-title-desc load-hidden">Made to be worn 365 days a year. No exceptions.</h5>
+                    <br><br>
+                    <h4 class="glasses-page-design-simple load-hidden">Simple</h4>
+                    <h6 class="glasses-page-design-simple-desc load-hidden">When they're on, one touch activates the retroactive recording function.</h6>
+                    <h6 class="glasses-page-design-simple-desc load-hidden">When they're off, we think they function as a beautiful pair of sunglasses.</h6>
+                    <br>
+                    <h4 class="glasses-page-design-sleek load-hidden">Sleek</h4>
+                    <h6 class="glasses-page-design-sleek-desc load-hidden">Components are efficiently placed within the frame. The result?</h6>
+                    <h6 class="glasses-page-design-sleek-desc load-hidden">A beautiful pair of smart glasses.</h6>
+                    <br>
+                    <h4 class="glasses-page-design-stylish load-hidden">Stylish</h4>
+                    <h6 class="glasses-page-design-stylish-desc load-hidden">A simple, modern design which you'll want to wear everyday.</h6>
+                    <h6 class="glasses-page-design-stylish-desc load-hidden">Did we mention they're customizable?</h6>
+                    <br>
+                    <a href="#" class="glasses-page-design-btn btn btn-outline-primary round button-font load-hidden" role="button" data-toggle="modal" data-target="#joinModal">join the list</a>
+                </div>
             </div>
         </div>
+    </div>
 
+    <div id="bg" class="glasses-page-function-section container-fluid load-hidden">
+        <div class="container glasses-page-function-title-section">
+            <div class="row align-items-center justify-content-start h-100">
+                <div class="col-12 col-md-12 load-hidden">
+                    <h3 class="glasses-page-function-title load-hidden">Function</h3>
+                    <h5 class="glasses-page-function-title-desc load-hidden">Rewind time.</h5>
+                    <br><br>
+                    <h4 class="glasses-page-function-simple load-hidden">Retroactive Recording</h4>
+                    <h6 class="glasses-page-function-simple-desc load-hidden">How many times have you pulled your camera out too late?</h6>
+                    <h6 class="glasses-page-function-simple-desc load-hidden">With the 20/20's you'll never miss a moment again.</h6>
+                    <br>
+                    <h4 class="glasses-page-function-sleek load-hidden">All Day Battery Life</h4>
+                    <h6 class="glasses-page-function-sleek-desc load-hidden">Pracical battery placement allows for 8 hours of continuous use.</h6>
+                    <h6 class="glasses-page-function-sleek-desc load-hidden">Pop it into the slim charging case whenever you're not using it.</h6>
+                    <br>
+                    <h4 class="glasses-page-function-stylish load-hidden">Mobile Apps</h4>
+                    <h6 class="glasses-page-function-stylish-desc load-hidden">Peruse your captured moments from our iOS and Android apps.</h6>
+                    <h6 class="glasses-page-function-stylish-desc load-hidden">Easily viewable, editable, and shareable from the apps.</h6>
+                    <br>
+                    <a href="#" class="glasses-page-function-btn btn btn-outline-primary round button-font load-hidden" role="button" data-toggle="modal" data-target="#joinModal">join the list</a>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <div id="bg" class="glasses-page-use-section container-fluid load-hidden">
+        <div class="container glasses-page-use-title-section">
+            <div class="row align-items-center justify-content-start h-100">
+                <div class="col-12 col-md-12">
+                    <h3 class="glasses-page-function-title load-hidden">Use Cases</h3>
+                    <h4 class="glasses-page-function-title-desc load-hidden">There's quite a few.</h4>
+                    <h6 class="glasses-page-function-title-desc load-hidden">Click one to learn more.</h6>
+
+                    <br>
+                    <h5 class="glasses-page-function-stylish-desc load-hidden" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Driving on the freeway.</h5>
+                    <div class="collapse" id="collapseExample">
+                        <div class="card card-body use-case-card-width use-case-card-bg">
+                            <h6>You're driving home after a long day and someone sideswipes you on the 405. You pull over and they start blaming you. You're not worried though. You used Hindsight after the fact to record an HD video of them hitting you.</h6>
+                        </div>
+                    </div>
+                    <h6 class="glasses-page-function-stylish-desc load-hidden">Enjoying a concert.</h6>
+                    <h6 class="glasses-page-function-stylish-desc load-hidden">Capturing your baby's first steps.</h6>
+                    <h6 class="glasses-page-function-stylish-desc load-hidden">Whale watching.</h6>
+                    <h6 class="glasses-page-function-stylish-desc load-hidden">That funny joke everyone missed.</h6>
+                    <h6 class="glasses-page-function-stylish-desc load-hidden">Social activism.</h6>
+                    <h6 class="glasses-page-function-stylish-desc load-hidden">That catch your daughter made.</h6>
+                    <h6 class="glasses-page-function-stylish-desc load-hidden">Hiking up Runyon Canyon.</h6>
+                    <h6 class="glasses-page-function-stylish-desc load-hidden">Watching the Warrior's game.</h6>
+                    <h6 class="glasses-page-function-stylish-desc load-hidden">That moment you missed.</h6>
+                    <h6 class="glasses-page-function-stylish-desc load-hidden">Anything.</h6>
+                    <br><br>
+                    <h3 class="glasses-page-function-stylish-desc load-hidden">Live in the moment, capture the past</h3>
+                    <h5 class="glasses-page-function-stylish-desc load-hidden">Arriving soon.</h5>
+                    <a href="#" class="glasses-page-function-btn btn btn-outline-primary round button-font load-hidden" role="button" data-toggle="modal" data-target="#joinModal">join the list</a>
+                </div>
+            </div>
+
+        </div>
     </div>
 
     <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -121,21 +197,39 @@
         </div>
     </div>
 
+    <div class="modal fade" id="joinModal" tabindex="-1" role="dialog" aria-labelledby="Join Modal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="contactModalTitle">Be the first to recieve updates</h5>
+                </div>
+                <div class="modal-body">
+                    <form action="https://formcarry.com/s/rkhZ4gQqf" method="POST" accept-charset="UTF-8">
+                        <div class="form-group">
+                            <label for="emailAddress-name" class="col-form-label">Email Address:</label>
+                            <input class="form-control" id="emailAddress-name" name="email" required>
+                            <small id="emailHelp" class="form-text text-muted">An email address so we can send you updates.</small>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-outline-secondary round button-font" data-dismiss="modal">Close</button>
+                            <button type="submit" class="btn btn-outline-primary round button-font">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="assets/js/prefixfree.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/barba.js/1.0.0/barba.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="assets/js/functions.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-    <script>
-        AOS.init();
-
-    </script>
 </body>
 
 </html>

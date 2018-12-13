@@ -13,13 +13,22 @@
     src: url(/assets/fonts/BergenText-Regular.otf)
 }
 
+.col-centered {
+    float: none;
+    margin: 0 auto;
+}
+
+html.sr .load-hidden {
+    visibility: hidden;
+}
+
 body,
 html {
     background-color: black;
 }
 
 #bg {
-    animation-duration: 2s;
+    background-color: rgba(0,0,0,0.8)
 }
 
 .navbar {
@@ -30,7 +39,7 @@ html {
     font-family: BergenMono;
 }
 
-.navbar.solid{
+.navbar.solid {
     background-color: black;
     transition: background-color 0.5s ease 0s;
 }
@@ -38,7 +47,7 @@ html {
 .main-page {
     height: 100vh;
     width: 100vw;
-    background-image: url(/assets/svg/main.svg);
+    background-image: url(/assets/img/home.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -49,7 +58,7 @@ html {
     height: 95%;
 }
 
-.main-page-cta h1{
+.main-page-cta h1 {
     font-family: BergenSans;
 }
 
@@ -80,45 +89,135 @@ html {
 }
 
 .glasses-page-hero-cta {
-    height: 90%;
+    height: 80%;
 }
 
-.glasses-page-hero-cta  h1{
+.glasses-page-hero-cta h1 {
     font-family: BergenSans;
 }
 
-.glasses-page-hero-cta  h2 {
+.glasses-page-hero-cta h2 {
     font-family: BergenText;
     color: rgba(255, 255, 255, 0.9)
 }
 
-.glasses-page-hero-cta  h6 {
+.glasses-page-hero-cta h6 {
     font-family: BergenText;
     color: rgba(255, 255, 255, 0.8)
 }
 
-.glasses-page-hero-bottom{
-    height: 10%;    
+.glasses-page-hero-button-section {
+    height: 10%;
 }
 
-.down-arrow-bounce{
+.glasses-page-hero-bottom {
+    height: 10%;
+}
+
+.down-arrow-bounce {
     animation-duration: 2s;
     animation-delay: 4s;
     animation-iteration-count: infinite;
 }
 
-#down-arrow:hover{
+#down-arrow:hover {
     fill: white;
 }
 
-.glasses-page-battery-section {
-    height: 100vh;
+.glasses-page-design-section {
+    height: 90vh;
     width: 100vw;
     background-image: url("/assets/img/glasses-battery.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     color: white;
+}
+
+.glasses-page-design-title-section {
+    height: 100%;
+}
+
+.glasses-page-design-title-section h3 {
+    font-family: BergenSans;
+}
+
+.glasses-page-design-title-section h4 {
+    font-family: BergenSans;
+}
+
+.glasses-page-design-title-section h5 {
+    font-family: BergenText;
+    color: rgba(255, 255, 255, 0.9)
+}
+
+.glasses-page-design-title-section h6 {
+    font-family: BergenText;
+    color: rgba(255, 255, 255, 0.8)
+}
+
+.glasses-page-function-section {
+    height: 95vh;
+    width: 100vw;
+    background-image: url("/assets/img/glasses-function.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    color: white;
+}
+
+.glasses-page-function-title-section {
+    height: 100%;
+}
+
+.glasses-page-function-title-section h3 {
+    font-family: BergenSans;
+}
+
+.glasses-page-function-title-section h4 {
+    font-family: BergenSans;
+}
+
+.glasses-page-function-title-section h5 {
+    font-family: BergenText;
+    color: rgba(255, 255, 255, 0.9)
+}
+
+.glasses-page-function-title-section h6 {
+    font-family: BergenText;
+    color: rgba(255, 255, 255, 0.8)
+}
+
+.glasses-page-use-section {
+    height: 100vh;
+    width: 100vw;
+    background-image: url("/assets/img/glasses.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    color: white;
+}
+
+.glasses-page-use-title-section {
+    height: 100%;
+}
+
+.glasses-page-use-title-section h3 {
+    font-family: BergenSans;
+}
+
+.glasses-page-use-title-section h4 {
+    font-family: BergenSans;
+}
+
+.glasses-page-use-title-section h5 {
+    font-family: BergenText;
+    color: rgba(255, 255, 255, 0.9)
+}
+
+.glasses-page-use-title-section h6 {
+    font-family: BergenText;
+    color: rgba(255, 255, 255, 0.8)
 }
 
 .team-page {
@@ -131,7 +230,7 @@ html {
     color: white;
 }
 
-.bottom-text {
+.main-page-bottom-text {
     font-size: 1vw;
 }
 
@@ -157,6 +256,14 @@ html {
     font-family: BergenSans
 }
 
+.use-case-card-bg{
+    background-color: rgba(0,0,0,0.8)
+}
+
+.use-case-card-width{
+    width: 50%;
+}
+
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
 
@@ -164,6 +271,9 @@ html {
     .bottom-text {
         font-size: 3vw;
     }
+    .use-case-card-width{
+    width: 100%;
+}
 }
 
 /* Smartphones (landscape) ----------- */
@@ -204,7 +314,7 @@ html {
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
 
     /* Styles */
-    .bottom-text {
+    .main-page-bottom-text {
         font-size: 1.5vw;
     }
 
@@ -260,7 +370,11 @@ iPad 3
 @media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2) {
 
     /* Styles */
-    .title-text {
+    .main-page-title-text {
+        font-size: 10vw;
+    }
+
+    .glasses-page-title-text {
         font-size: 10vw;
     }
 
@@ -274,7 +388,11 @@ iPad 3
 @media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2) {
 
     /* Styles */
-    .desc-text {
+    .main-page-desc-text {
+        font-size: 4.8vw;
+    }
+
+    .glasses-page-desc-text {
         font-size: 4.8vw;
     }
 }
@@ -287,8 +405,11 @@ iPad 3
 @media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2) {
 
     /* Styles */
-    /* Styles */
-    .desc-text {
+    .main-page-desc-text {
+        font-size: 4.8vw;
+    }
+
+    .glasses-page-desc-text {
         font-size: 4.8vw;
     }
 }
@@ -301,7 +422,11 @@ iPad 3
 @media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3) {
 
     /* Styles */
-    .desc-text {
+    .main-page-desc-text {
+        font-size: 4.8vw;
+    }
+
+    .glasses-page-desc-text {
         font-size: 4.8vw;
     }
 }
