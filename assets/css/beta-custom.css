@@ -268,7 +268,7 @@ html {
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
 
     /* Styles */
-    .bottom-text {
+    .main-page-bottom-text {
         font-size: 3vw;
     }
     .use-case-card-width{
@@ -290,7 +290,7 @@ html {
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
 
     /* Styles */
-    .bottom-text {
+    .main-page-bottom-text {
         font-size: 1.5vw;
     }
 
