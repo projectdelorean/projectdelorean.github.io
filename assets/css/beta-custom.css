@@ -18,6 +18,14 @@
     margin: 0 auto;
 }
 
+body {
+    opacity: 0;
+}
+ 
+body.all-loaded {
+    opacity: 1;
+}
+
 html.sr .load-hidden {
     visibility: hidden;
 }
@@ -279,6 +287,9 @@ html {
 
     /* Styles */
     .main-page-bottom-text {
+        font-size: 3vw;
+    }
+    .glasses-page-bottom-text {
         font-size: 3vw;
     }
 

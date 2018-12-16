@@ -1,3 +1,7 @@
+$(window).load(function() {
+    $("body").addClass('all-loaded');
+});
+
 var animationEnd = (function (el) {
     var animations = {
         animation: 'animationend',
