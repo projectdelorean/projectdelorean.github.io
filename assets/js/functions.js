@@ -212,7 +212,7 @@ $('document').ready(function () {
         delay: 100,
         duration: 750
     });
-    ScrollReveal().reveal('.glasses-page-footer', {
+    ScrollReveal().reveal('.glasses-page-bottom-text', {
         delay: 250,
         duration: 750
     });
