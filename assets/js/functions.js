@@ -1,6 +1,8 @@
-$(window).load(function() {
+$(window).on('load', function () {
     $("body").addClass('all-loaded');
 });
+
+
 
 var animationEnd = (function (el) {
     var animations = {
@@ -51,8 +53,6 @@ $('document').ready(function () {
     });
     ScrollReveal().reveal('.main-page-bottom-text', {
         delay: 250,
-        origin: 'bottom',
-        distance: '100px',
         duration: 750
     });
     ScrollReveal().reveal('.glasses-page-hero', {
@@ -212,6 +212,10 @@ $('document').ready(function () {
         delay: 100,
         duration: 750
     });
+    ScrollReveal().reveal('.glasses-page-footer', {
+        delay: 250,
+        duration: 750
+    });
 
     $('#home-link').on('click', function (event) {
         console.log("AYE HOME");
@@ -240,7 +244,7 @@ $('document').ready(function () {
             scrollTop: $(".glasses-page-design-section").offset().top
         }, 2000);
     });
-    
+
     $('.freeway-use-case').on('click', function (event) {
         console.log("ASKDLAS")
         $("#freeway-collapse").collapse("toggle");
@@ -255,7 +259,7 @@ $('document').ready(function () {
         $("#moment-collapse").collapse("hide");
         $("#anytime-collapse").collapse("hide");
     });
-    
+
     $('.concert-use-case').on('click', function (event) {
         $("#freeway-collapse").collapse("hide");
         $("#concert-collapse").collapse("toggle");
