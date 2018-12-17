@@ -26,10 +26,6 @@ body.all-loaded {
     opacity: 1;
 }
 
-html.sr .load-hidden {
-    visibility: hidden;
-}
-
 body,
 html {
     background-color: black;
