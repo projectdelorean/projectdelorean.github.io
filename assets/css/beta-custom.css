@@ -21,7 +21,7 @@
 body {
     opacity: 0;
 }
- 
+
 body.all-loaded {
     opacity: 1;
 }
@@ -126,6 +126,25 @@ html {
 
 #down-arrow:hover {
     fill: white;
+}
+
+.glasses-page-how-section{
+    height: 50vh;
+    width: 100vw;
+    color: white;
+}
+
+.glasses-page-how-section h3{
+    font-family: BergenSans;
+}
+
+.glasses-page-how-section h5 {
+    font-family: BergenText;
+    color: rgba(255, 255, 255, 0.9)
+}
+
+.glasses-page-how-info-section{
+    height: 100%;
 }
 
 .glasses-page-design-section {

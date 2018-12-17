@@ -51,8 +51,8 @@ $('document').ready(function () {
 
     $('#scroll-to-design').on('click', function (event) {
         $('html, body').animate({
-            scrollTop: $(".glasses-page-design-section").offset().top
-        }, 2000);
+            scrollTop: $(".glasses-page-how-section").offset().top
+        }, 1500);
     });
 
     $('.freeway-use-case').on('click', function (event) {
