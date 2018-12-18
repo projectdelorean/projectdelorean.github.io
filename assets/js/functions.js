@@ -21,12 +21,6 @@ var animationEnd = (function (el) {
 
 $('document').ready(function () {
 
-    ScrollReveal().reveal('.navbar', {
-        delay: 250,
-        origin: 'top',
-        distance: '100px',
-        duration: 750
-    });
     $('#home-link').on('click', function (event) {
         console.log("AYE HOME");
     });

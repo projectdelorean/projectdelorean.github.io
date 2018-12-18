@@ -15,14 +15,16 @@
     <meta name="theme-color" content="#000000">
     <title>Hindsight - Glasses</title>
 
-    <!-- Bootstrap CSS-->
+   <!-- Bootstrap CSS-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!-- ANIMATE.CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
     <!-- Custom CSS -->
     <link type="text/css" rel="stylesheet" href="assets/css/beta-custom.css?version=12" />
-    <!--  ScrollReveal -->
-    <script src="assets/js/scrollreveal.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+              </script>
     <noscript>
         <style>
             body {
@@ -34,7 +36,7 @@
 
 <body>
 
-    <nav id="the-nav-bar" class="navbar navbar-dark navbar-expand-md justify-content-center fixed-top load-hidden">
+    <nav id="the-nav-bar" class="navbar navbar-dark navbar-expand-md justify-content-center fixed-top lh wow fadeInDown">
         <a href="/beta-landingpage.html" class="navbar-brand d-flex w-50 mr-auto">
             <img src="assets/brand/lens_logo.svg" width="30" height="30" style="margin-right: 10px">
             Hindsight
@@ -45,7 +47,7 @@
         <div class="navbar-collapse collapse w-100" id="collapsingNavbar3">
             <ul class="navbar-nav mx-auto w-100 justify-content-center">
                 <li class="nav-item">
-                    <a id="glasses-link" class="nav-link" href="/glasses.html">glasses</a>
+                    <a id="glasses-link" class="nav-link active" href="/glasses.html">glasses</a>
                 </li>
                 <li class="nav-item">
                     <a id="team-link" class="nav-link" href="/team.html">team</a>
@@ -59,22 +61,22 @@
         </div>
     </nav>
 
-    <div id="bg" class="glasses-page-hero container-fluid   lh">
+    <div id="bg" class="glasses-page-hero container-fluid lh wow fadeIn">
         <div class="row align-items-center glasses-page-hero-cta">
             <div class="col-12" align="center">
-                <h1 class="glasses-page-title-text  lh">Hindsight</h1>
-                <h2 class="glasses-page-desc-text  lh">20/20's</h2>
-                <h6 class="glasses-page-tagline-text  lh">Never forget something again.</h6>
+                <h1 class="glasses-page-title-text lh wow fadeInUp" data-wow-duration=".75s" data-wow-delay=".75s">Hindsight</h1>
+                <h2 class="glasses-page-desc-text lh wow fadeIn" data-wow-duration=".75s" data-wow-delay="1s">20/20's</h2>
+                <h6 class="glasses-page-tagline-text lh wow fadeIn" data-wow-duration=".75s" data-wow-delay="1s">Never forget something again.</h6>
             </div>
         </div>
 
-        <div class="row align-items-center glasses-page-hero-button-section  lh">
+        <div class="row align-items-center glasses-page-hero-button-section lh wow fadeIn" data-wow-duration=".75s" data-wow-delay="1.25s">
             <div class="col-12" align="center">
-                <a href="#" class="main-page-btn btn btn-outline-primary round button-font  lh" role="button" data-toggle="modal" data-target="#joinModal">join the list</a>
+                <a href="#" class="main-page-btn btn btn-outline-primary round button-font" role="button" data-toggle="modal" data-target="#joinModal">join the list</a>
             </div>
         </div>
 
-        <div class="row align-items-center glasses-page-hero-bottom  lh">
+        <div class="row align-items-center glasses-page-hero-bottom lh wow fadeInDown" data-wow-duration=".75s" data-wow-delay="1.25s">
             <div class="col" align="center">
                 <a id="scroll-to-design" href="#">
                     <img src="/assets/svg/down.svg" width="25" height="25" id="down-arrow" class="animated bounce down-arrow-bounce">
@@ -86,12 +88,12 @@
     <div id="bg" class="glasses-page-how-section container-fluid  lh">
         <div class="row justify-content-center align-items-center glasses-page-how-info-section">
             <div class="col-12 col-md-4 text-center">
-                <img class=" icon_class" src="assets/svg/glasses_icon.svg" alt="Glasses Model Image" width="100" height="100">
+                <img class=" icon_class wow fadeIn" data-wow-duration=".75s" data-wow-delay="" src="assets/svg/glasses_icon.svg" alt="Glasses Model Image" width="100" height="100">
                 <h5>Tap the frame to save a 40 second video.</h5>
                 <h5 class="text-muted">20 seconds before tap, 20 seconds after.</h5>
             </div>
             <div class="col-12 col-md-4 text-center">
-                <img class=" icon_class" src="assets/svg/app_icon.svg" alt="Glasses Model Image" width="100" height="100">
+                <img class=" icon_class wow fadeIn" data-wow-duration=".75s" data-wow-delay="" src="assets/svg/app_icon.svg" alt="Glasses Model Image" width="100" height="100">
                 <h5>Open the app to access saved videos.</h5>
                 <h5 class="text-muted">Available for iOS and Android.</h5>
             </div>
@@ -102,18 +104,18 @@
         <div class="container glasses-page-design-title-section">
             <div class="row align-items-center justify-content-start h-100">
                 <div class="col-12 col-md-8  lh ">
-                    <h3 class="glasses-page-design-title  lh ">Design</h3>
+                    <h3 class="glasses-page-design-title  lh wow fadeIn" data-wow-duration=".75s" data-wow-delay="">Design</h3>
                     <h5 class="glasses-page-design-title-desc  lh">Made to be worn 365 days a year. No exceptions.</h5>
                     <br><br>
-                    <h4 class="glasses-page-design-simple   lh">Simple</h4>
+                    <h4 class="glasses-page-design-simple   lh wow fadeIn" data-wow-duration=".75s" data-wow-delay="">Simple</h4>
                     <h6 class="glasses-page-design-simple-desc  lh ">When they're on, one touch activates the retroactive recording function.</h6>
                     <h6 class="glasses-page-design-simple-desc  lh ">When they're off, we think they function as a beautiful pair of sunglasses.</h6>
                     <br>
-                    <h4 class="glasses-page-design-sleek  lh ">Sleek</h4>
+                    <h4 class="glasses-page-design-sleek  lh wow fadeIn" data-wow-duration=".75s" data-wow-delay="">Sleek</h4>
                     <h6 class="glasses-page-design-sleek-desc  lh ">Components are efficiently placed within the frame. The result?</h6>
                     <h6 class="glasses-page-design-sleek-desc   lh">A beautiful pair of smart glasses.</h6>
                     <br>
-                    <h4 class="glasses-page-design-stylish   lh">Stylish</h4>
+                    <h4 class="glasses-page-design-stylish   lh wow fadeIn" data-wow-duration=".75s" data-wow-delay="">Stylish</h4>
                     <h6 class="glasses-page-design-stylish-desc  lh ">A simple, modern design which you'll want to wear everyday.</h6>
                     <h6 class="glasses-page-design-stylish-desc   lh">Did we mention they're customizable?</h6>
                     <br>
@@ -127,18 +129,18 @@
         <div class="container glasses-page-function-title-section">
             <div class="row align-items-center justify-content-start h-100">
                 <div class="col-12 col-md-12  lh ">
-                    <h3 class="glasses-page-function-title   lh">Function</h3>
+                    <h3 class="glasses-page-function-title lh wow fadeIn" data-wow-duration=".75s" data-wow-delay="">Function</h3>
                     <h5 class="glasses-page-function-title-desc   lh">Rewind time.</h5>
                     <br><br>
-                    <h4 class="glasses-page-function-simple   lh">Retroactive Recording</h4>
+                    <h4 class="glasses-page-function-simple   lh wow fadeIn" data-wow-duration=".75s" data-wow-delay="">Retroactive Recording</h4>
                     <h6 class="glasses-page-function-simple-desc   lh">How many times have you pulled your camera out too late?</h6>
                     <h6 class="glasses-page-function-simple-desc   lh">With the 20/20's you'll never miss a moment again.</h6>
                     <br>
-                    <h4 class="glasses-page-function-sleek   lh">All Day Battery Life</h4>
+                    <h4 class="glasses-page-function-sleek   lh wow fadeIn " data-wow-duration=".75s" data-wow-delay="">All Day Battery Life</h4>
                     <h6 class="glasses-page-function-sleek-desc  lh ">Pracical battery placement allows for 8 hours of continuous use.</h6>
                     <h6 class="glasses-page-function-sleek-desc  lh ">Pop it into the slim charging case whenever you're not using it.</h6>
                     <br>
-                    <h4 class="glasses-page-function-stylish  lh ">Mobile Apps</h4>
+                    <h4 class="glasses-page-function-stylish  lh wow fadeIn" data-wow-duration=".75s" data-wow-delay="">Mobile Apps</h4>
                     <h6 class="glasses-page-function-stylish-desc  lh ">Peruse your captured moments from our iOS and Android apps.</h6>
                     <h6 class="glasses-page-function-stylish-desc  lh ">Moments are viewable, editable, and shareable from the apps.</h6>
                     <br>

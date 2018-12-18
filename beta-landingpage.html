@@ -17,10 +17,14 @@
 
     <!-- Bootstrap CSS-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- ANIMATE.CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
     <!-- Custom CSS -->
     <link type="text/css" rel="stylesheet" href="assets/css/beta-custom.css?version=12" />
-    <!--  ScrollReveal -->
-    <script src="assets/js/scrollreveal.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+              </script>
     <noscript>
         <style>
             body {
@@ -32,7 +36,7 @@
 
 <body>
 
-    <nav id="the-nav-bar" class="navbar navbar-dark navbar-expand-md justify-content-center fixed-top load-hidden">
+    <nav id="the-nav-bar" class="navbar navbar-dark navbar-expand-md justify-content-center fixed-top lh wow fadeInDown">
         <a href="/beta-landingpage.html" class="navbar-brand d-flex w-50 mr-auto">
             <img src="assets/brand/lens_logo.svg" width="30" height="30" style="margin-right: 10px">
             Hindsight
@@ -57,21 +61,20 @@
         </div>
     </nav>
 
-    <div id="bg" class="main-page container-fluid  lh">
-
+    <div id="bg" class="main-page container-fluid lh wow fadeIn" data-wow-duration=".75s">
         <div class="row align-items-center main-page-cta">
             <div class="col" align="center">
-                <h1 class="main-page-title-text  lh">Live in the moment, capture the past</h1>
-                <h5 class="main-page-desc-text  lh">Hindsight is a next generation pair of glasses which allow you to capture moments before and after they happen.</h5>
-                <h6 class="main-page-tagline-text  lh">Never forget something again.</h6>
-                <a href="/glasses.html" class="main-page-btn btn btn-light round button-font  lh" role="button">learn more</a>
-                <a href="#" class="main-page-btn btn btn-dark round button-font  lh" role="button" data-toggle="modal" data-target="#joinModal">join the list</a>
+                <h1 class="main-page-title-text lh wow fadeInUp" data-wow-duration=".75s" data-wow-delay=".75s">Live in the moment, capture the past</h1>
+                <h5 class="main-page-desc-text lh wow fadeIn" data-wow-duration=".75s" data-wow-delay="1s">Hindsight is a next generation pair of glasses which allow you to capture moments before and after they happen.</h5>
+                <h6 class="main-page-tagline-text lh wow fadeIn" data-wow-duration=".75s" data-wow-delay="1.25s">Never forget something again.</h6>
+                <a href="/glasses.html" class="main-page-btn btn btn-light round button-font lh wow fadeIn" role="button" data-wow-duration=".75s" data-wow-delay="1.5s">learn more</a>
+                <a href="#" class="main-page-btn btn btn-dark round button-font lh wow fadeIn" data-wow-duration=".75s" data-wow-delay="1.5s" role="button" data-toggle="modal" data-target="#joinModal">join the list</a>
             </div>
         </div>
 
-        <div class="row align-items-center main-page-footer">
+        <div class="row align-items-center main-page-footer lh wow fadeInUp">
             <div class="col" align="center">
-                <h6 class="main-page-bottom-text  lh">Hindsight Technologies, LLC. The year is 2018.</h6>
+                <h6 class="main-page-bottom-text">Hindsight Technologies, LLC. The year is 2018.</h6>
             </div>
         </div>
 

@@ -256,11 +256,35 @@ html {
 .team-page {
     height: 100vh;
     width: 100vw;
-    background-image: url(/assets/svg/team.svg);
+    background-image: url(/assets/img/team.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     color: white;
+}
+
+.team-page-cta {
+    height: 95%;
+}
+
+.team-page h1{
+    font-family: BergenSans;
+}
+
+.team-page h5{
+    font-family: BergenSans;
+    color: black;
+}
+
+.team-page p{
+    font-family: BergenText;
+    color: black;
+}
+
+.team-page-footer {
+    height: 5%;
+    font-family: BergenMono;
+    color: rgba(255, 255, 255, 0.5)
 }
 
 .main-page-bottom-text {
@@ -268,6 +292,10 @@ html {
 }
 
 .glasses-page-bottom-text {
+    font-size: 1vw;
+}
+
+.team-page-bottom-text {
     font-size: 1vw;
 }
 
@@ -297,6 +325,10 @@ html {
     background-color: rgba(0, 0, 0, 0.8)
 }
 
+.team-card-bg {
+    background-color: rgba(255, 255, 255, 0.9)
+}
+
 .use-case-card-width {
     width: 50%;
 }
@@ -310,6 +342,14 @@ html {
     }
     .glasses-page-bottom-text {
         font-size: 3vw;
+    }
+    .team-page-bottom-text {
+        font-size: 3vw;
+    }
+    
+    .card-size{
+        width: 100%;
+        height: 20vh;
     }
 
     .use-case-card-width {
@@ -338,6 +378,9 @@ html {
     .glasses-page-bottom-text {
         font-size: 1.5vw;
     }
+    .team-page-bottom-text {
+        font-size: 1.5vw;
+    }
 
 }
 
@@ -364,6 +407,10 @@ html {
     }
 
     .glasses-page-bottom-text {
+        font-size: 1.5vw;
+    }
+    
+    .team-page-bottom-text {
         font-size: 1.5vw;
     }
 
