@@ -3,7 +3,6 @@ $(window).on('load', function () {
 });
 
 
-
 var animationEnd = (function (el) {
     var animations = {
         animation: 'animationend',
@@ -50,7 +49,6 @@ $('document').ready(function () {
     });
 
     $('.freeway-use-case').on('click', function (event) {
-        console.log("ASKDLAS")
         $("#freeway-collapse").collapse("toggle");
         $("#concert-collapse").collapse("hide");
         $("#baby-collapse").collapse("hide");
