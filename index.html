@@ -5,147 +5,147 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Hindsight Glasses</title>
-    <meta property="og:site_name " content="Hindsight" />
-    <meta property="og:title" content="Hindsight Glasses" />
-    <meta property="og:description" content="Hindsight is a next generation pair of glasses which allow you to capture moments before and after they happen. Never forget something again." />
-    <!-- Bootstrap CSS-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-    <!-- Animate.CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-    <!-- Google Font -->
-    <link href='http://fonts.googleapis.com/css?family=Abril+Fatface|Open+Sans:300,400,600,700,800|Gentium+Book+Basic:400,400italic|Vollkorn:400italic,400' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Gravitas+One|Lato:100,900|Old+Standard+TT:400,400italic|PT+Serif:400|PT+Sans+Narrow:700' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=PT+Sans:700|Merriweather:400,900|Playfair+Display:400,900,700italic|Oswald:700|PT+Mono' rel='stylesheet' type='text/css'>
+    <meta name="mobile-web-app-capable" content="yes" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000">
+    <meta name="msapplication-TileColor" content="#000000">
+    <meta name="theme-color" content="#000000">
+    <title>Hindsight</title>
 
-    <link type="text/css" rel="stylesheet" href="assets/css/custom.css" />
+    <!-- Bootstrap CSS-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- ANIMATE.CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <!-- Custom CSS -->
+    <link type="text/css" rel="stylesheet" href="assets/css/beta-custom.css?version=13" />
+    <script src="assets/js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+              </script>
+    <noscript>
+        <style>
+            body {
+		    opacity: 1;
+	    }
+    </style>
+    </noscript>
 </head>
 
 <body>
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-12" align="center">
-                <a href="http://hindsightglasses.com"><img id="logo" class="animated fadeInDown" src="assets/brand/logo.svg" alt="Logo" /></a>
+
+    <nav id="the-nav-bar" class="navbar navbar-dark navbar-expand-md justify-content-center fixed-top lh wow fadeInDown">
+        <a href="/beta-landingpage.html" class="navbar-brand d-flex w-50 mr-auto">
+            <img src="assets/brand/lens_logo.svg" width="30" height="30" style="margin-right: 10px">
+            Hindsight
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar3">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse w-100" id="collapsingNavbar3">
+            <ul class="navbar-nav mx-auto w-100 justify-content-center">
+                <li class="nav-item">
+                    <a id="glasses-link" class="nav-link" href="/glasses.html">glasses</a>
+                </li>
+                <li class="nav-item">
+                    <a id="team-link" class="nav-link" href="/team.html">team</a>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
+                <li class="nav-item">
+                    <a class="nav-link" href="#" data-toggle="modal" data-target="#contactModal">contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="bg" class="main-page container-fluid lh wow fadeIn" data-wow-duration=".75s">
+        <div class="row align-items-center main-page-cta">
+            <div class="col" align="center">
+                <h1 class="main-page-title-text lh wow fadeInUp" data-wow-duration=".75s" data-wow-delay=".75s">Live in the moment, capture the past</h1>
+                <h5 class="main-page-desc-text lh wow fadeIn" data-wow-duration=".75s" data-wow-delay="1s">Hindsight is a next generation pair of glasses which allow you to capture moments before and after they happen.</h5>
+                <h6 class="main-page-tagline-text lh wow fadeIn" data-wow-duration=".75s" data-wow-delay="1.25s">Never forget something again.</h6>
+                <a href="/glasses.html" class="main-page-btn btn btn-light round button-font lh wow fadeIn" role="button" data-wow-duration=".75s" data-wow-delay="1.5s">learn more</a>
+                <a href="#" class="main-page-btn btn btn-primary round button-font lh wow fadeIn" data-wow-duration=".75s" data-wow-delay="1.5s" role="button" data-toggle="modal" data-target="#joinModal">join the list</a>
             </div>
         </div>
-        <div class="row justify-content-center" id="title-plus-call-to-action">
-            <div class="col-md-12 animated fadeIn delay-1" align="center">
-                <h1>Hindsight</h1>
-                <hr>
-                <h2>live in the moment, capture the past</h2>
-                <hr class="bottom">
+
+        <div class="row align-items-center main-page-footer lh wow fadeInUp">
+            <div class="col" align="center">
+                <h6 class="main-page-bottom-text">Hindsight Technologies, LLC. The year is 2018.</h6>
             </div>
         </div>
-        <div class="row justify-content-center" id="description">
-            <div class="col-md-12 mt-1 animated fadeIn delay-2" align="center">
-                <h3>Hindsight is a next generation pair of glasses which allow you to capture moments before and after they happen. Never forget something again.</h3>
-            </div>
-        </div>
-        <div class="row justify-content-center" id="title-plus-call-to-action">
-            <div class="col-md-12 animated fadeIn delay-3" align="center">
-                <hr>
-                <h2>when to use it</h2>
-                <hr class="bottom">
-            </div>
-        </div>
-        <div class="row justify-content-center">
-            <div class="col-md-12 mt-1" align="center">
-                <div class="card-deck">
-                    <div class="card animated fadeInUp delay-4 mb-1">
-                        <img class="card-img-top" src="assets/img/concert.jpg" alt="Concert Image" width="200" height="200">
-                        <div class="card-body">
-                            <h4 class="card-title">At a concert</h4>
-                            <p class="card-text">Keep your phone in your pocket, with Hindsight you can record any highlights whenever they happen. Enjoy that sweet music and still make your friends jealous.</p>
-                        </div>
-                    </div>
-                    <div class="card animated fadeInUp delay-5 mb-1">
-                        <img class="card-img-top" src="assets/img/driving.jpg" alt="Driving Image" width="200" height="200">
-                        <div class="card-body">
-                            <h4 class="card-title">While you're driving</h4>
-                            <p class="card-text">You're driving home after a long day and someone sideswipes you on the 405. You pull over and they start blaming you. You're not worried though. You used Hindsight after the fact to record an HD video of them hitting you.</p>
-                        </div>
-                    </div>
-                    <div class="card animated fadeInUp delay-6 mb-1">
-                        <img class="card-img-top" src="assets/img/life.jpg" alt="Anytime Image" width="200" height="200">
-                        <div class="card-body">
-                            <h4 class="card-title">Anytime</h4>
-                            <p class="card-text">Whenever your Hindsight glasses are on, you're able to record something after it happens. It's up to you to decide what to save.</p>
-                        </div>
-                    </div>
+
+    </div>
+
+    <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="Contact Us" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="contactModalTitle">We'd love to hear from you</h5>
                 </div>
-            </div>
-        </div>
-        <div class="row justify-content-center" id="title-plus-call-to-action">
-            <div class="col-md-12 animated fadeIn delay-6" align="center">
-                <hr>
-                <h2>how to use it</h2>
-                <hr class="bottom">
-            </div>
-        </div>
-        <div class="row justify-content-center">
-            <div class="col-md-12 mt-1" align="center">
-                <div class="card-deck">
-                    <div class="card animated fadeInUp delay-7 mb-1">
-                        <img class="card-img-top icon_class" src="assets/img/glasses_model.svg" alt="Glasses Model Image" width="200" height="200">
-                        <div class="card-body">
-                            <h4 class="card-title">The glasses</h4>
-                            <p class="card-text">When they're on, tap the side of the glasses to save the last 20 seconds and the next 20 seconds. The videos you save will automatically sync with your phone when they're connected.</p>
+                <div class="modal-body">
+                    <form action="https://formcarry.com/s/rkhZ4gQqf" method="POST" accept-charset="UTF-8">
+                        <div class="form-group">
+                            <label for="subject-name" class="col-form-label">Subject:</label>
+                            <input type="text" class="form-control" id="subject-name" name="subject" required>
+                            <input type="hidden" name="_gotcha" style="display:none" />
+                            <small id="subjectHelp" class="form-text text-muted">A brief summary of why you're reaching out.</small>
+
                         </div>
-                    </div>
-                    <div class="card animated fadeInUp delay-8 mb-1">
-                        <img class="card-img-top icon_class" src="assets/img/app.svg" alt="App Image" width="200" height="200">
-                        <div class="card-body">
-                            <h4 class="card-title">The app</h4>
-                            <p class="card-text">Use the app to view your saved videos. From here you can share them wherever you want.</p>
+                        <div class="form-group">
+                            <label for="emailAddress-name" class="col-form-label">Email Address:</label>
+                            <input class="form-control" id="emailAddress-name" name="email" required>
+                            <small id="emailHelp" class="form-text text-muted">An email address so we can follow up with you.</small>
                         </div>
-                    </div>
-                    <div class="card animated fadeInUp delay-9 mb-1">
-                        <img class="card-img-top icon_class" src="assets/img/fireworks.svg" alt="Fireworks Image" width="200" height="200">
-                        <div class="card-body">
-                            <h4 class="card-title">That's it</h4>
-                            <p class="card-text">Really. We designed these glasses to be extremely easy to use.</p>
+                        <div class="form-group">
+                            <label for="message-area" class="col-form-label">Message:</label>
+                            <textarea class="form-control" id="message-area" rows="4" name="message" required></textarea>
                         </div>
-                    </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-outline-secondary round button-font" data-dismiss="modal">Close</button>
+                            <button type="submit" class="btn btn-outline-primary round button-font">Send message</button>
+                        </div>
+                    </form>
                 </div>
-            </div>
-        </div>
-        <div class="row justify-content-center" id="title-plus-call-to-action">
-            <div class="col-md-12 animated fadeIn delay-9" align="center">
-                <hr>
-                <h2>sign up for updates</h2>
-                <hr class="bottom">
-            </div>
-        </div>
-        <div class="row justify-content-center">
-            <div class="col-md-12 animated fadeIn delay-10" align="center">
-                <form action="https://formcarry.com/s/rkhZ4gQqf" method="POST" accept-charset="UTF-8">
-                    <div class="form-group">
-                        <label for="exampleInputEmail1">Email address</label>
-                        <input type="email" name="email_address" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Sign up for updates">
-                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-                        <input type="text" name="_gotcha" style="display:none" />
-                    </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                </form>
-            </div>
-        </div>
-        <div class="row justify-content-center mt-3" id="wilder">
-            <div class="col-md-12 animated fadeIn delay-10" align="center">
-                <h1>&ldquo;Hindsight is always 20/20&rdquo;</h1>
-                <p>&mdash;Billy Wilder</p>
-            </div>
-        </div>
-        <div class="row justify-content-center mt-2">
-            <div class="col-md-12 animated fadeIn delay-10" align="center">
-                <p><small>&copy; Hindsight Technologies, LLC. The year is 2018.</small></p>
             </div>
         </div>
     </div>
 
-    <!-- jQuery first, then Tether, then Bootstrap JS. -->
-    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+    <div class="modal fade" id="joinModal" tabindex="-1" role="dialog" aria-labelledby="Join Modal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="contactModalTitle">Be the first to recieve updates</h5>
+                </div>
+                <div class="modal-body">
+                    <form action="https://formcarry.com/s/rkhZ4gQqf" method="POST" accept-charset="UTF-8">
+                        <div class="form-group">
+                            <label for="emailAddress-name" class="col-form-label">Email Address:</label>
+                            <input class="form-control" id="emailAddress-name" name="email" required>
+                            <small id="emailHelp" class="form-text text-muted">An email address so we can send you updates.</small>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-outline-secondary round button-font" data-dismiss="modal">Close</button>
+                            <button type="submit" class="btn btn-outline-primary round button-font">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="assets/js/prefixfree.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/barba.js/1.0.0/barba.min.js"></script>
+    <script src="assets/js/functions.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 </body>
 
 </html>
